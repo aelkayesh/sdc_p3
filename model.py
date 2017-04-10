@@ -105,11 +105,7 @@ def generator(lines, batch_size):
 							img_flipped = np.fliplr(img)
 							images.append(img_flipped)  	  		
 							measurements.append(- 1* measurement)		#flipped measurement
-							if(abs(measurement) > 0.5):
-								img, measurement = shift_image(img, measurement, 80, 0)
-								images.append(img)						
-								measurements.append(measurement)
-				
+
 			X_train = np.array(images)
 			y_train = np.array(measurements)
 			yield shuffle(X_train, y_train)	
