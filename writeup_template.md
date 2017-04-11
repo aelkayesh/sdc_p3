@@ -81,14 +81,18 @@ I saw that the the model is doing well on training and validation sets so I thou
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. To improve the driving behavior in these cases, I noticed that most of the images have angles in the range of -0.165 to 0.1. For these images, I added only one out of every four, to make the input contain enought and fair training images for all angles.
 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
+At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road. Here is how my histogram looked like...
+![image1]
+
+Zooming in a bit...
+![image2]
 
 ####2. Final Model Architecture
 
 The final model architecture (model.py lines 63-68) consisted of a convolution neural network with the following layers and layer sizes.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
+![image3]
 
 
 ####3. Creation of the Training Set & Training Process
